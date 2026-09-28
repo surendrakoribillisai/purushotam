@@ -10,7 +10,7 @@ if (saveButton) {
     /* Local backup */
 
     localStorage.setItem(
-      "portfolioData",
+      "portifolioData",
       JSON.stringify(d)
     );
 
@@ -117,7 +117,7 @@ async function loadFromSupabase() {
     };
 
     localStorage.setItem(
-      "portfolioData",
+      "portifolioData",
       JSON.stringify(d)
     );
 
