@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+<header class="nav">
+<a class="brand" href="#home">Portfolio<span>.</span></a>
+<button class="menu" aria-label="Menu">☰</button>
+<nav id="nav"></nav>
+</header>
+<main>
+<section id="home" class="hero">
+<div class="hero-copy">
+<p class="eyebrow" id="heroEyebrow">UI/UX DESIGNER · AI & SOFTWARE</p>
+<p class="profile-name" id="profileName"></p>
+<h1 id="heroTitle">Designing ideas.<br><span>Building experiences.</span></h1>
+<p class="lead" id="heroBio"></p><div id="heroExtra" class="profile-extra-grid hero-extra"></div>
+<div class="actions"><a class="btn primary" href="#projects">View My Work</a><a class="btn ghost" href="#contact">Contact Me</a></div>
+<div class="quick" id="quickLinks"></div>
+</div>
+<div class="hero-photo-wrap"><div class="photo-ring"></div><img class="hero-photo" src="assets/profile.jpg" alt="Profile photo"></div>
+</section>
+<div id="dynamic"></div>
+<section id="contact" class="section contact">
+<p class="eyebrow">CONTACT</p><h2>Let's create something meaningful.</h2>
+<p class="contact-copy">Have a project, opportunity or idea? Get in touch.</p>
+<div class="contact-links" id="contactLinks"></div><div id="contactExtra" class="profile-extra-grid contact-extra"></div>
+</section>
+</main>
+<footer>© <span id="year"></span> Portfolio. All rights reserved.</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="script.js?v=5"></script>
+</body>
+</html>

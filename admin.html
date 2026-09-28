@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio Admin</title>
+
+  <link rel="stylesheet" href="admin.css?v=6">
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <aside>
+
+      <div class="logo">
+        Portfolio<span> Admin</span>
+      </div>
+
+      <button class="side active" data-tab="profile">
+        ✦ Resume Editor
+      </button>
+
+      <button class="side" data-tab="links">
+        🔗 Links
+      </button>
+
+      <button class="side" data-tab="education">
+        🎓 Education
+      </button>
+
+      <button class="side" data-tab="experience">
+        💼 Experience
+      </button>
+
+      <button class="side" data-tab="skills">
+        🛠 Skills
+      </button>
+
+      <button class="side" data-tab="projects">
+        📁 Projects
+      </button>
+
+      <button class="side" data-tab="certificates">
+        📜 Certificates
+      </button>
+
+      <button class="side" data-tab="details">
+        ➕ More Details
+      </button>
+
+      <button class="side" data-tab="resume">
+        📄 Resume PDF
+      </button>
+
+      <a href="index.html" target="_blank">
+        ↗ View Website
+      </a>
+
+      <p>Portfolio Admin</p>
+
+    </aside>
+
+
+    <main>
+
+      <div class="top">
+
+        <div>
+          <small>ADMIN DASHBOARD</small>
+          <h1>Edit Resume &amp; Portfolio</h1>
+        </div>
+
+        <div class="top-actions">
+
+          <button id="preview">
+            Preview
+          </button>
+
+          <button id="save">
+            Save Changes
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div id="app"></div>
+
+      <div id="status"></div>
+
+    </main>
+
+  </div>
+
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Your configuration -->
+  <script src="supabase-config.js?v=2"></script>
+
+  <!-- Admin JavaScript -->
+  <script src="admin.js?v=6"></script>
+
+</body>
+
+</html>
