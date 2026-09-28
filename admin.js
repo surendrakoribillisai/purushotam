@@ -1330,17 +1330,10 @@ if (saveButton) {
 
       try {
 
-        const payload = {
-
-          id: 1,
-
-          data: d,
-
-          updated_at:
-            new Date().toISOString()
-
-        };
-
+       const payload = {
+  id: 1,
+  data: d
+};
 
         const { error } =
           await window.supabaseClient
