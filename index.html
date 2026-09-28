@@ -23,7 +23,17 @@
 <div class="actions"><a class="btn primary" href="#projects">View My Work</a><a class="btn ghost" href="#contact">Contact Me</a></div>
 <div class="quick" id="quickLinks"></div>
 </div>
-<div class="hero-photo-wrap"><div class="photo-ring"></div><img class="hero-photo" src="assets/profile.jpg" alt="Profile photo"></div>
+<div class="hero-photo-wrap"><div class="photo-ring"></div><img class="hero-photo" id="profileImage" alt="Profile photo">
+
+<script>
+const img = document.getElementById("profileImage");
+
+img.src = "assets/profile.jpg";
+
+img.onerror = () => {
+  img.src = "assets/profile.jpeg";
+};
+</script></div>
 </section>
 <div id="dynamic"></div>
 <section id="contact" class="section contact">
