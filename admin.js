@@ -118,7 +118,7 @@ function loadLocal() {
   try {
 
     const saved = JSON.parse(
-      localStorage.getItem("portfolioData") || "{}"
+      localStorage.getItem("portifolioData") || "{}"
     );
 
     return {
@@ -1311,7 +1311,7 @@ if (saveButton) {
       /* Local backup */
 
       localStorage.setItem(
-        "portfolioData",
+        "portifolioData",
         JSON.stringify(d)
       );
 
@@ -1483,7 +1483,7 @@ async function loadFromSupabase() {
 
 
     localStorage.setItem(
-      "portfolioData",
+      "portifolioData",
       JSON.stringify(d)
     );
 
