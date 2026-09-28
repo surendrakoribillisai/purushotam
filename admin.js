@@ -1335,35 +1335,26 @@ if (saveButton) {
   data: d
 };
 
-        const { error } =
-          await window.supabaseClient
+const { error } =
+  await window.supabaseClient
+    .from("portifolio")
+    .upsert(payload);
 
-            .from("portifolio")
+if (error) {
+  console.error(
+    "Supabase save error:",
+    error
+  );
 
-            .upsert(payload);
+  show(
+    "Supabase save failed: " +
+    error.message
+  );
 
+  return;
+}
 
-        if (error) {
-
-          console.error(
-            "Supabase save error:",
-            error
-          );
-
-
-          show(
-            "Supabase save failed: " +
-            error.message
-          );
-
-          return;
-        }
-
-
-        show(
-          "Changes saved successfully."
-        );
-
+show("Changes saved successfully.");
 
       } catch (error) {
 
